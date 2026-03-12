@@ -1,0 +1,8 @@
+# HUMI v2 Configuration
+WIFI_SSID=Turkoglu_Wi-Fi_2.4Ghz
+WIFI_PASSWORD=DDc57C8C9962b
+MAILERSEND_TOKEN=mlsn.b626ef284198582ebf69c22269cde80985189ec81f5118cb03945e801a04dfa8
+FROM_EMAIL=humi@batuhantrkgl.tech
+TO_EMAIL=batuhanturkoglu37@gmail.com
+API_TOKEN=your-secret-token-here
+CORS_ORIGIN=https://your-website.com

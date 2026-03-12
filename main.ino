@@ -791,6 +791,9 @@
     }
   }
 
+  // Forward declaration
+  void sendJsonHeaders(WiFiClient& client, int statusCode = 200);
+
   void setup() {
     // Initialize serial communication
     Serial.begin(9600);
@@ -2409,7 +2412,7 @@
   }
 
   // Helper: Send standard JSON HTTP response headers
-  void sendJsonHeaders(WiFiClient& client, int statusCode = 200) {
+  void sendJsonHeaders(WiFiClient& client, int statusCode) {
     client.print("HTTP/1.1 ");
     client.print(statusCode);
     client.println(statusCode == 200 ? " OK" : " Error");
